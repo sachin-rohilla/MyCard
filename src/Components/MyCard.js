@@ -7,7 +7,7 @@ const MyCard = () => {
     <>
     {Data.map((item)=>{
       return(
-        <div className="card">
+        <div className="card" key={item.id}>
         <div className="card-img">
           <img src={item.image} alt="Fashion" width={"300px"} />
           <h1 className="heading">{item.title}</h1>
