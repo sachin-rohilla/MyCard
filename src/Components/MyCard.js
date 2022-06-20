@@ -1,16 +1,22 @@
 import React from "react";
 import "./MyCard.css";
+import Data from "./Data.json"
 
-const MyCard = ({ title, name, image }) => {
+const MyCard = () => {
   return (
     <>
-      <div className="card">
+    {Data.map((item)=>{
+      return(
+        <div className="card">
         <div className="card-img">
-          <img src={image} alt="Fashion" width={"300px"} />
-          <h1 className="heading">{title}</h1>
-          <p className="para">{name}</p>
+          <img src={item.image} alt="Fashion" width={"300px"} />
+          <h1 className="heading">{item.title}</h1>
+          <p className="para">{item.name}</p>
         </div>
       </div>
+      )
+    })}
+      
     </>
   );
 };
