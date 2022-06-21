@@ -12,7 +12,7 @@
 }
 .sec-para {
   padding: 25px;
-  width: 370px;
+  width: 350px;
 }
 .sec-paragraph {
   font-size: 12px;
@@ -35,5 +35,9 @@
     flex-direction: column;
 
     align-items: center;
+  }
+  .sec-para{
+    width: auto;
+    text-align: center;
   }
 }
